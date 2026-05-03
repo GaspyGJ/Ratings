@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Gaspy Scoring</title>
   <link rel="stylesheet" href="index.css">
-  <script src="index.js" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <div id="root">
@@ -20,12 +20,13 @@
       </a>
     </div>
     <div class="search-container">
-    <input type="text" id="search" placeholder="Buscar título...">
-    <div class="filters-row" id="filters"></div>
-    <div class="actions-row">
-      <button class="action-btn" id="sort-btn">Ordenar ↕</button>
-      <button class="action-btn" id="avg-btn">Promedio</button>
-    </div>
+      <input type="text" id="search" placeholder="Buscar título...">
+      <div class="actions-row">
+        <button class="action-btn active" id="games-btn">Juegos</button>
+        <button class="action-btn" id="movies-btn">Películas</button>
+        <button class="action-btn" id="sort-btn">Ordenar ↕</button>
+      </div>
+      <div class="filters-row" id="filters"></div>
     </div>
 
     <div class="avg-banner" id="avg-banner">
