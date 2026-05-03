@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Gaspy Scoring</title>
+  <link rel="stylesheet" href="Ratings.css">
+  <script src="Ratings.js" defer></script>
+</head>
+<body>
+  <div id="root">
+    <div class="header-row">
+      <h1>Gaspy Scoring</h1>
+      <a 
+        href="https://docs.google.com/spreadsheets/d/1_U-jixHUZXcuKA6k1rfThC1V4uzHK4193DhzYBzdjFI/edit?gid=261843673#gid=261843673"
+        target="_blank"
+        class="sheet-btn"
+      >
+        Sheet
+      </a>
+    </div>
+    <div class="search-container">
+    <input type="text" id="search" placeholder="Buscar título...">
+    <div class="filters-row" id="filters"></div>
+    <div class="actions-row">
+      <button class="action-btn" id="sort-btn">Ordenar ↕</button>
+      <button class="action-btn" id="avg-btn">Promedio</button>
+    </div>
+    </div>
+
+    <div class="avg-banner" id="avg-banner">
+      <div class="avg-label">Promedio de resultados</div>
+      <div class="avg-score" id="avg-score">—</div>
+      <div id="avg-stars"></div>
+      <div class="avg-count" id="avg-count"></div>
+    </div>
+    <div class="card-list" id="cards"></div>
+    <div class="no-results" id="no-results" style="display:none">Sin resultados.</div>
+  </div>
+</body>
+</html>
